@@ -22,342 +22,117 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        lblKabbyaForexBureauConverterSystem = New Label()
-        lblUGX1 = New Label()
-        lblYuan1 = New Label()
-        lblYuan2 = New Label()
-        lblUGX2 = New Label()
-        lblUGX3 = New Label()
-        lblDirham1 = New Label()
-        lblDirham2 = New Label()
-        lblUGX4 = New Label()
-        txtUGXToYuan = New TextBox()
-        txtYuanToUGX = New TextBox()
-        txtYuan = New TextBox()
-        txtUGXFromYuan = New TextBox()
-        txtDirham = New TextBox()
-        txtUGXToDirham = New TextBox()
-        txtDirhamToUGX = New TextBox()
-        txtUGXFromDirham = New TextBox()
-        btnConvertToYuan = New Button()
-        btnConvertToUGXYuan = New Button()
-        btnConvertToDirham = New Button()
-        btnConvertToUGXDirham = New Button()
+        lblLoginForm = New Label()
+        lblUsername = New Label()
+        lblPassward = New Label()
+        btnLogin = New Button()
         btnClear = New Button()
-        Panel1 = New Panel()
-        Panel2 = New Panel()
-        btnExit = New Button()
-        Panel1.SuspendLayout()
-        Panel2.SuspendLayout()
+        txtUser = New TextBox()
+        txtPass = New TextBox()
         SuspendLayout()
         ' 
-        ' lblKabbyaForexBureauConverterSystem
+        ' lblLoginForm
         ' 
-        lblKabbyaForexBureauConverterSystem.AutoSize = True
-        lblKabbyaForexBureauConverterSystem.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblKabbyaForexBureauConverterSystem.Location = New Point(132, 12)
-        lblKabbyaForexBureauConverterSystem.Name = "lblKabbyaForexBureauConverterSystem"
-        lblKabbyaForexBureauConverterSystem.Size = New Size(535, 32)
-        lblKabbyaForexBureauConverterSystem.TabIndex = 0
-        lblKabbyaForexBureauConverterSystem.Text = "KABBYA FOREX BUREAU CONVERTER SYSTEM"
+        lblLoginForm.AutoSize = True
+        lblLoginForm.Font = New Font("Adobe Fan Heiti Std B", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblLoginForm.ForeColor = Color.FromArgb(CByte(0), CByte(0), CByte(192))
+        lblLoginForm.Location = New Point(206, 19)
+        lblLoginForm.Name = "lblLoginForm"
+        lblLoginForm.Size = New Size(409, 40)
+        lblLoginForm.TabIndex = 0
+        lblLoginForm.Text = "WELCOME TO LOGIN FORM"
         ' 
-        ' lblUGX1
+        ' lblUsername
         ' 
-        lblUGX1.AutoSize = True
-        lblUGX1.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblUGX1.Location = New Point(80, 11)
-        lblUGX1.Name = "lblUGX1"
-        lblUGX1.Size = New Size(56, 24)
-        lblUGX1.TabIndex = 1
-        lblUGX1.Text = "UGX"
+        lblUsername.AutoSize = True
+        lblUsername.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblUsername.Location = New Point(184, 95)
+        lblUsername.Name = "lblUsername"
+        lblUsername.Size = New Size(145, 40)
+        lblUsername.TabIndex = 1
+        lblUsername.Text = "Username"
         ' 
-        ' lblYuan1
+        ' lblPassward
         ' 
-        lblYuan1.AutoSize = True
-        lblYuan1.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblYuan1.Location = New Point(467, 11)
-        lblYuan1.Name = "lblYuan1"
-        lblYuan1.Size = New Size(172, 24)
-        lblYuan1.TabIndex = 2
-        lblYuan1.Text = "CHINESE YUAN"
+        lblPassward.AutoSize = True
+        lblPassward.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblPassward.Location = New Point(184, 162)
+        lblPassward.Name = "lblPassward"
+        lblPassward.Size = New Size(136, 40)
+        lblPassward.TabIndex = 2
+        lblPassward.Text = "Password"
         ' 
-        ' lblYuan2
+        ' btnLogin
         ' 
-        lblYuan2.AutoSize = True
-        lblYuan2.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblYuan2.Location = New Point(32, 119)
-        lblYuan2.Name = "lblYuan2"
-        lblYuan2.Size = New Size(172, 24)
-        lblYuan2.TabIndex = 3
-        lblYuan2.Text = "CHINESE YUAN"
-        ' 
-        ' lblUGX2
-        ' 
-        lblUGX2.AutoSize = True
-        lblUGX2.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblUGX2.Location = New Point(531, 115)
-        lblUGX2.Name = "lblUGX2"
-        lblUGX2.Size = New Size(56, 24)
-        lblUGX2.TabIndex = 4
-        lblUGX2.Text = "UGX"
-        ' 
-        ' lblUGX3
-        ' 
-        lblUGX3.AutoSize = True
-        lblUGX3.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblUGX3.Location = New Point(82, 12)
-        lblUGX3.Name = "lblUGX3"
-        lblUGX3.Size = New Size(56, 24)
-        lblUGX3.TabIndex = 5
-        lblUGX3.Text = "UGX"
-        ' 
-        ' lblDirham1
-        ' 
-        lblDirham1.AutoSize = True
-        lblDirham1.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblDirham1.Location = New Point(490, 11)
-        lblDirham1.Name = "lblDirham1"
-        lblDirham1.Size = New Size(146, 24)
-        lblDirham1.TabIndex = 6
-        lblDirham1.Text = "UAE DIRHAM"
-        ' 
-        ' lblDirham2
-        ' 
-        lblDirham2.AutoSize = True
-        lblDirham2.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblDirham2.Location = New Point(47, 112)
-        lblDirham2.Name = "lblDirham2"
-        lblDirham2.Size = New Size(146, 24)
-        lblDirham2.TabIndex = 7
-        lblDirham2.Text = "UAE DIRHAM"
-        ' 
-        ' lblUGX4
-        ' 
-        lblUGX4.AutoSize = True
-        lblUGX4.Font = New Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblUGX4.Location = New Point(531, 117)
-        lblUGX4.Name = "lblUGX4"
-        lblUGX4.Size = New Size(56, 24)
-        lblUGX4.TabIndex = 8
-        lblUGX4.Text = "UGX"
-        ' 
-        ' txtUGXToYuan
-        ' 
-        txtUGXToYuan.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtUGXToYuan.Location = New Point(23, 45)
-        txtUGXToYuan.Name = "txtUGXToYuan"
-        txtUGXToYuan.Size = New Size(190, 29)
-        txtUGXToYuan.TabIndex = 11
-        ' 
-        ' txtYuanToUGX
-        ' 
-        txtYuanToUGX.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtYuanToUGX.Location = New Point(23, 154)
-        txtYuanToUGX.Name = "txtYuanToUGX"
-        txtYuanToUGX.Size = New Size(188, 29)
-        txtYuanToUGX.TabIndex = 12
-        ' 
-        ' txtYuan
-        ' 
-        txtYuan.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtYuan.Location = New Point(449, 45)
-        txtYuan.Name = "txtYuan"
-        txtYuan.Size = New Size(207, 29)
-        txtYuan.TabIndex = 13
-        ' 
-        ' txtUGXFromYuan
-        ' 
-        txtUGXFromYuan.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtUGXFromYuan.Location = New Point(449, 154)
-        txtUGXFromYuan.Name = "txtUGXFromYuan"
-        txtUGXFromYuan.Size = New Size(207, 29)
-        txtUGXFromYuan.TabIndex = 14
-        ' 
-        ' txtDirham
-        ' 
-        txtDirham.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtDirham.Location = New Point(463, 46)
-        txtDirham.Name = "txtDirham"
-        txtDirham.Size = New Size(193, 29)
-        txtDirham.TabIndex = 15
-        ' 
-        ' txtUGXToDirham
-        ' 
-        txtUGXToDirham.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtUGXToDirham.Location = New Point(23, 46)
-        txtUGXToDirham.Name = "txtUGXToDirham"
-        txtUGXToDirham.Size = New Size(204, 29)
-        txtUGXToDirham.TabIndex = 16
-        ' 
-        ' txtDirhamToUGX
-        ' 
-        txtDirhamToUGX.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtDirhamToUGX.Location = New Point(23, 147)
-        txtDirhamToUGX.Name = "txtDirhamToUGX"
-        txtDirhamToUGX.Size = New Size(204, 29)
-        txtDirhamToUGX.TabIndex = 17
-        ' 
-        ' txtUGXFromDirham
-        ' 
-        txtUGXFromDirham.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtUGXFromDirham.Location = New Point(461, 152)
-        txtUGXFromDirham.Name = "txtUGXFromDirham"
-        txtUGXFromDirham.Size = New Size(195, 29)
-        txtUGXFromDirham.TabIndex = 18
-        ' 
-        ' btnConvertToYuan
-        ' 
-        btnConvertToYuan.BackColor = SystemColors.ControlText
-        btnConvertToYuan.Font = New Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnConvertToYuan.ForeColor = Color.White
-        btnConvertToYuan.Location = New Point(247, 16)
-        btnConvertToYuan.Name = "btnConvertToYuan"
-        btnConvertToYuan.Size = New Size(179, 72)
-        btnConvertToYuan.TabIndex = 19
-        btnConvertToYuan.Text = "CONVERT TO YUAN"
-        btnConvertToYuan.UseVisualStyleBackColor = False
-        ' 
-        ' btnConvertToUGXYuan
-        ' 
-        btnConvertToUGXYuan.BackColor = Color.Black
-        btnConvertToUGXYuan.Font = New Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnConvertToUGXYuan.ForeColor = Color.White
-        btnConvertToUGXYuan.Location = New Point(247, 124)
-        btnConvertToUGXYuan.Name = "btnConvertToUGXYuan"
-        btnConvertToUGXYuan.Size = New Size(179, 76)
-        btnConvertToUGXYuan.TabIndex = 20
-        btnConvertToUGXYuan.Text = "CONVERT TO UGX"
-        btnConvertToUGXYuan.UseVisualStyleBackColor = False
-        ' 
-        ' btnConvertToDirham
-        ' 
-        btnConvertToDirham.BackColor = Color.Black
-        btnConvertToDirham.Font = New Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnConvertToDirham.ForeColor = Color.White
-        btnConvertToDirham.Location = New Point(247, 11)
-        btnConvertToDirham.Name = "btnConvertToDirham"
-        btnConvertToDirham.Size = New Size(179, 72)
-        btnConvertToDirham.TabIndex = 21
-        btnConvertToDirham.Text = "CONVERT TO DIRHAM"
-        btnConvertToDirham.UseVisualStyleBackColor = False
-        ' 
-        ' btnConvertToUGXDirham
-        ' 
-        btnConvertToUGXDirham.BackColor = Color.Black
-        btnConvertToUGXDirham.Font = New Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnConvertToUGXDirham.ForeColor = Color.White
-        btnConvertToUGXDirham.Location = New Point(247, 110)
-        btnConvertToUGXDirham.Name = "btnConvertToUGXDirham"
-        btnConvertToUGXDirham.Size = New Size(179, 74)
-        btnConvertToUGXDirham.TabIndex = 22
-        btnConvertToUGXDirham.Text = "CONVERT TO UGX"
-        btnConvertToUGXDirham.UseVisualStyleBackColor = False
+        btnLogin.BackColor = Color.White
+        btnLogin.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnLogin.ForeColor = Color.Blue
+        btnLogin.Location = New Point(475, 255)
+        btnLogin.Name = "btnLogin"
+        btnLogin.Size = New Size(172, 46)
+        btnLogin.TabIndex = 3
+        btnLogin.Text = "LOGIN"
+        btnLogin.UseVisualStyleBackColor = False
         ' 
         ' btnClear
         ' 
-        btnClear.BackColor = Color.Black
-        btnClear.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnClear.ForeColor = Color.White
-        btnClear.Location = New Point(526, 509)
+        btnClear.BackColor = Color.White
+        btnClear.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnClear.ForeColor = Color.Blue
+        btnClear.Location = New Point(252, 255)
         btnClear.Name = "btnClear"
-        btnClear.Size = New Size(166, 46)
-        btnClear.TabIndex = 23
+        btnClear.Size = New Size(151, 46)
+        btnClear.TabIndex = 4
         btnClear.Text = "CLEAR"
         btnClear.UseVisualStyleBackColor = False
         ' 
-        ' Panel1
+        ' txtUser
         ' 
-        Panel1.BackColor = Color.Silver
-        Panel1.Controls.Add(btnConvertToUGXYuan)
-        Panel1.Controls.Add(btnConvertToYuan)
-        Panel1.Controls.Add(txtUGXFromYuan)
-        Panel1.Controls.Add(txtYuan)
-        Panel1.Controls.Add(txtYuanToUGX)
-        Panel1.Controls.Add(txtUGXToYuan)
-        Panel1.Controls.Add(lblUGX2)
-        Panel1.Controls.Add(lblYuan2)
-        Panel1.Controls.Add(lblYuan1)
-        Panel1.Controls.Add(lblUGX1)
-        Panel1.Location = New Point(61, 61)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(697, 216)
-        Panel1.TabIndex = 24
+        txtUser.BackColor = SystemColors.InactiveCaption
+        txtUser.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtUser.ForeColor = SystemColors.ControlText
+        txtUser.Location = New Point(367, 100)
+        txtUser.Name = "txtUser"
+        txtUser.PlaceholderText = "Username"
+        txtUser.Size = New Size(280, 35)
+        txtUser.TabIndex = 5
         ' 
-        ' Panel2
+        ' txtPass
         ' 
-        Panel2.BackColor = Color.Silver
-        Panel2.Controls.Add(btnConvertToUGXDirham)
-        Panel2.Controls.Add(btnConvertToDirham)
-        Panel2.Controls.Add(txtUGXFromDirham)
-        Panel2.Controls.Add(txtDirhamToUGX)
-        Panel2.Controls.Add(txtUGXToDirham)
-        Panel2.Controls.Add(txtDirham)
-        Panel2.Controls.Add(lblUGX4)
-        Panel2.Controls.Add(lblDirham2)
-        Panel2.Controls.Add(lblDirham1)
-        Panel2.Controls.Add(lblUGX3)
-        Panel2.Location = New Point(61, 302)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(697, 197)
-        Panel2.TabIndex = 25
-        ' 
-        ' btnExit
-        ' 
-        btnExit.BackColor = Color.Black
-        btnExit.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnExit.ForeColor = Color.White
-        btnExit.Location = New Point(145, 509)
-        btnExit.Name = "btnExit"
-        btnExit.Size = New Size(166, 46)
-        btnExit.TabIndex = 26
-        btnExit.Text = "EXIT"
-        btnExit.UseVisualStyleBackColor = False
+        txtPass.BackColor = SystemColors.InactiveCaption
+        txtPass.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtPass.ForeColor = SystemColors.InactiveCaptionText
+        txtPass.Location = New Point(367, 167)
+        txtPass.Name = "txtPass"
+        txtPass.PlaceholderText = "Password"
+        txtPass.Size = New Size(280, 35)
+        txtPass.TabIndex = 6
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.BurlyWood
-        ClientSize = New Size(828, 582)
-        Controls.Add(btnExit)
-        Controls.Add(Panel2)
-        Controls.Add(Panel1)
+        BackColor = Color.DarkTurquoise
+        ClientSize = New Size(800, 450)
+        Controls.Add(txtPass)
+        Controls.Add(txtUser)
         Controls.Add(btnClear)
-        Controls.Add(lblKabbyaForexBureauConverterSystem)
+        Controls.Add(btnLogin)
+        Controls.Add(lblPassward)
+        Controls.Add(lblUsername)
+        Controls.Add(lblLoginForm)
         Name = "Form1"
-        Text = "KABBYA FOREX BUREAU"
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
-        Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
+        Text = "SIMPLE LOGIN FORM"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents lblKabbyaForexBureauConverterSystem As Label
-    Friend WithEvents lblUGX1 As Label
-    Friend WithEvents lblYuan1 As Label
-    Friend WithEvents lblYuan2 As Label
-    Friend WithEvents lblUGX2 As Label
-    Friend WithEvents lblUGX3 As Label
-    Friend WithEvents lblDirham1 As Label
-    Friend WithEvents lblDirham2 As Label
-    Friend WithEvents lblUGX4 As Label
-    Friend WithEvents txtUGXToYuan As TextBox
-    Friend WithEvents txtYuanToUGX As TextBox
-    Friend WithEvents txtYuan As TextBox
-    Friend WithEvents txtUGXFromYuan As TextBox
-    Friend WithEvents txtDirham As TextBox
-    Friend WithEvents txtUGXToDirham As TextBox
-    Friend WithEvents txtDirhamToUGX As TextBox
-    Friend WithEvents txtUGXFromDirham As TextBox
-    Friend WithEvents btnConvertToYuan As Button
-    Friend WithEvents btnConvertToUGXYuan As Button
-    Friend WithEvents btnConvertToDirham As Button
-    Friend WithEvents btnConvertToUGXDirham As Button
+    Friend WithEvents lblLoginForm As Label
+    Friend WithEvents lblUsername As Label
+    Friend WithEvents lblPassward As Label
+    Friend WithEvents btnLogin As Button
     Friend WithEvents btnClear As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents btnExit As Button
+    Friend WithEvents txtUser As TextBox
+    Friend WithEvents txtPass As TextBox
 
 End Class
